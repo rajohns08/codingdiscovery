@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-f308fe84ce858bedc138761fd29821eb44004bf7.jar" />
-    </item>
-    <item
-        jar="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jar="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/classes-c8b76387bcaf5767e3cac81db280b98e43aa1234.jar" />
+        <dex dex="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/classes-9330d64ac5762b59d61ed08d8896f538448c7a2d.jar" />
+    </item>
+    <item
+        jar="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/classes-817cd920c6a6a6bd8444358884af9395667c67d3.jar" />
+    </item>
+    <item
+        jar="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-7cb2638b58087c09e7a3e4b376b5c24c45eaf03f.jar" />
     </item>
     <item
         jar="/Users/rajohns/android-sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
         jumboMode="false"
         revision="21.1.1"
         sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-334c66f617f84929479aaf3e477d4503fc708540.jar" />
-    </item>
-    <item
-        jar="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
-        jumboMode="false"
-        revision="21.1.1"
-        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="/Users/rajohns/Documents/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/classes-7bfe8f86c5b16c0dcf2b9d082992f16117d645fc.jar" />
+        <dex dex="/Users/rajohns/Documents/codingdiscovery/ListViewWithHeaders/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-334c66f617f84929479aaf3e477d4503fc708540.jar" />
     </item>
 
 </items>
