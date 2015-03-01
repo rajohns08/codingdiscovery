@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u92-GN-4x8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8O-NU-zO5" userLabel="Yellow Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="pEq-XU-Zhf" kind="embed" id="uxU-IU-QRj"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAr-GB-UzR" userLabel="Blue Container View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="rh7-ng-FSn" kind="embed" id="5XJ-IQ-HqE"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AAr-GB-UzR" secondAttribute="bottom" id="7jB-ae-1SS"/>
+                            <constraint firstItem="AAr-GB-UzR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Ry-hk-HbE"/>
+                            <constraint firstAttribute="trailing" secondItem="a8O-NU-zO5" secondAttribute="trailing" id="Cmt-wZ-oIK"/>
+                            <constraint firstAttribute="trailing" secondItem="AAr-GB-UzR" secondAttribute="trailing" id="DhF-TR-gC2"/>
+                            <constraint firstAttribute="bottom" secondItem="AAr-GB-UzR" secondAttribute="bottom" id="EDs-Kn-JA7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="a8O-NU-zO5" secondAttribute="bottom" id="INw-Vk-9lO"/>
+                            <constraint firstItem="AAr-GB-UzR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bxR-Qj-gG4"/>
+                            <constraint firstItem="a8O-NU-zO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iy3-Q4-d4K"/>
+                            <constraint firstItem="AAr-GB-UzR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pkM-7N-fOh"/>
+                            <constraint firstItem="a8O-NU-zO5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wKY-zM-4cf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pkM-7N-fOh"/>
+                                <exclude reference="7jB-ae-1SS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="lRF-xL-aY8">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="XfH-W8-4mi">
+                            <rect key="frame" x="200" y="7" width="200" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Blue"/>
+                                <segment title="Yellow"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fxx-Mq-0WR"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="blueContainer" destination="AAr-GB-UzR" id="dUG-qZ-F0Y"/>
+                        <outlet property="yellowContainer" destination="a8O-NU-zO5" id="i0K-8o-37R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="399"/>
+        </scene>
+        <!--Yellow Sub View Controller-->
+        <scene sceneID="yCw-cC-Kh2">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pEq-XU-Zhf" customClass="YellowSubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ijd-de-dRl"/>
+                        <viewControllerLayoutGuide type="bottom" id="AHh-Ca-wKl"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u0g-OE-bey">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJl-5X-x6F">
+                                <rect key="frame" x="20" y="250" width="560" height="102"/>
+                                <mutableString key="text">Mario Kart is a series of go-kart-style racing video games developed and published by Nintendo as spin-offs from its trademark Super Mario series. The first in the series, Super Mario Kart, was launched in 1992 on the Super Nintendo Entertainment System to critical and commercial success.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96942050764921628" blue="0.58542378676316043" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="fJl-5X-x6F" secondAttribute="centerY" id="c4Z-jK-Myr"/>
+                            <constraint firstItem="fJl-5X-x6F" firstAttribute="leading" secondItem="u0g-OE-bey" secondAttribute="leading" constant="20" id="knN-Zn-Dwi"/>
+                            <constraint firstAttribute="trailing" secondItem="fJl-5X-x6F" secondAttribute="trailing" constant="20" id="l9V-st-MDe"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaS-Ff-8Ct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="790"/>
+        </scene>
+        <!--Blue Sub View Controller-->
+        <scene sceneID="cb1-Io-Jee">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="rh7-ng-FSn" customClass="BlueSubViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L73-do-7lX"/>
+                        <viewControllerLayoutGuide type="bottom" id="7rQ-Wp-it3"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EUA-9I-p4r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mariokart.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fAY-LU-SHs">
+                                <rect key="frame" x="140" y="150" width="320" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="SBt-3f-ncR"/>
+                                    <constraint firstAttribute="width" constant="320" id="ScQ-T1-EcL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64645838265686417" green="0.76165815612422894" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fAY-LU-SHs" secondAttribute="centerX" id="3H4-Uh-HdO"/>
+                            <constraint firstAttribute="centerY" secondItem="fAY-LU-SHs" secondAttribute="centerY" id="c7J-GD-6bN"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDn-8E-VoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XTp-cv-RlJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u92-GN-4x8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1aZ-41-ept">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IOb-fR-eFo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pP-yd-yhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="399"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mariokart.jpg" width="1024" height="768"/>
+    </resources>
+</document>
