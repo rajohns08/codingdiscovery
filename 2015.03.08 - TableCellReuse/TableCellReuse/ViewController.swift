@@ -17,20 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         return 40
     }
     
-    func tableView(tableView: UITableView,
-        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("MyCell") as MyCustomTableViewCell
-
-        cell.leftLabel.text = "I'm a cell"
-        
-        if indexPath.row < 20 {
-            cell.rightLabel.text = "< 20"
-        }
-        else {
-            cell.rightLabel.text = ""
-        }
-        
+        cell.setData(indexPath.row)
         return cell
     }
 }
