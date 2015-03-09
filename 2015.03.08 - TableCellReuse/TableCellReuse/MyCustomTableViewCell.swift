@@ -30,6 +30,8 @@ class MyCustomTableViewCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
+        
         // Default state of a cell
         self.leftLabel.text = ""
         self.rightLabel.text = ""
