@@ -27,6 +27,14 @@ class MyCustomTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        if selected {
+            self.leftLabel.textColor = UIColor.whiteColor()
+            self.rightLabel.textColor = UIColor.whiteColor()
+        } else {
+            self.leftLabel.textColor = UIColor.blackColor()
+            self.rightLabel.textColor = UIColor.blackColor()
+        }
+        
     }
     
     override func prepareForReuse() {
@@ -39,7 +47,7 @@ class MyCustomTableViewCell: UITableViewCell {
     
     // MARK: Custom Methods
     
-    func setData(row: Int) {
+    func setUpCell(row: Int) {
         self.leftLabel.text = "I'm a cell"
         
         if row < 20 {

@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("MyCell") as MyCustomTableViewCell
-        cell.setData(indexPath.row)
+        cell.setUpCell(indexPath.row)
         return cell
     }
 }
