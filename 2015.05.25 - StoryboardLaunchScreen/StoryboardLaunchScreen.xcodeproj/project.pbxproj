@@ -11,8 +11,8 @@
 		DC137F301B13A369006FED4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC137F2F1B13A369006FED4C /* ViewController.swift */; };
 		DC137F331B13A369006FED4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC137F311B13A369006FED4C /* Main.storyboard */; };
 		DC137F351B13A369006FED4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC137F341B13A369006FED4C /* Images.xcassets */; };
-		DC137F381B13A369006FED4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC137F361B13A369006FED4C /* LaunchScreen.xib */; };
 		DC137F441B13A369006FED4C /* StoryboardLaunchScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC137F431B13A369006FED4C /* StoryboardLaunchScreenTests.swift */; };
+		DC8B09471B13A43700491254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8B09461B13A43700491254 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		DC137F2F1B13A369006FED4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC137F321B13A369006FED4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC137F341B13A369006FED4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DC137F371B13A369006FED4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DC137F3D1B13A369006FED4C /* StoryboardLaunchScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardLaunchScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC137F421B13A369006FED4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC137F431B13A369006FED4C /* StoryboardLaunchScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLaunchScreenTests.swift; sourceTree = "<group>"; };
+		DC8B09461B13A43700491254 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 				DC137F2F1B13A369006FED4C /* ViewController.swift */,
 				DC137F311B13A369006FED4C /* Main.storyboard */,
 				DC137F341B13A369006FED4C /* Images.xcassets */,
-				DC137F361B13A369006FED4C /* LaunchScreen.xib */,
 				DC137F2B1B13A369006FED4C /* Supporting Files */,
+				DC8B09461B13A43700491254 /* LaunchScreen.storyboard */,
 			);
 			path = StoryboardLaunchScreen;
 			sourceTree = "<group>";
@@ -193,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC137F331B13A369006FED4C /* Main.storyboard in Resources */,
-				DC137F381B13A369006FED4C /* LaunchScreen.xib in Resources */,
+				DC8B09471B13A43700491254 /* LaunchScreen.storyboard in Resources */,
 				DC137F351B13A369006FED4C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +242,6 @@
 				DC137F321B13A369006FED4C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DC137F361B13A369006FED4C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DC137F371B13A369006FED4C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -411,6 +403,7 @@
 				DC137F491B13A369006FED4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC137F4A1B13A369006FED4C /* Build configuration list for PBXNativeTarget "StoryboardLaunchScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +412,7 @@
 				DC137F4C1B13A369006FED4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
